@@ -3,6 +3,8 @@ body {
     background-color: #330033;
     color: #ff9966;
     font-family: 'Fredoka One', cursive;
+    margin: 0;
+    min-height: 100vh;
 }
 
 header h1 {
@@ -84,3 +86,4 @@ main {
     }
 
 }
+
