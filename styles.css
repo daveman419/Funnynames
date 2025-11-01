@@ -1,0 +1,85 @@
+body {
+    text-align: center;
+    background-color: #330033;
+    color: #ff9966;
+    font-family: 'Fredoka One', cursive;
+}
+
+header h1 {
+      font-size: 2.8em;
+      color: #ff9966;
+      margin-bottom: 0.2em;
+      text-shadow: 5px 5px 5px #ca1dc2;
+}
+
+/* --- Centering Fix: Use Flexbox on the Main Container --- */
+main {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items horizontally */
+    min-height: 50vh;       /* Gives some height to center content down the page */
+    justify-content: flex-start; /* Aligns content to the top of the main area */
+    padding: 20px;
+}
+
+.output {
+    padding: 20px;
+    font-size: 2em;
+    color: #00ffcc;
+}
+
+.btn {
+  /* ... existing button styles ... */
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#ff6699, #990033 50%);
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-family: Fredoka One;
+  font-size: 1.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 18px 50px;
+  text-align: center;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+/* Button Hover State */
+.btn:hover {
+  background-image: linear-gradient(#B384C9, #391F5B 50%);
+  box-shadow: rgba(57, 31, 91, 0.4) 0 4px 8px,rgba(179, 132, 201, 0.6) 0 16px 24px;
+  transform: translateY(-2px);
+}
+
+/* Button Press State (Fixing :press to :active) */
+.btn:active {
+  background-image: linear-gradient(#ff4d88, #4d001a 50%);
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px inset; /* Inset shadow gives a 'pressed' look */
+  transform: translateY(0);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header h2 {
+        font-size: 1.2em;
+    }
+    .btn {
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+    .output {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+}
