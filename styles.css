@@ -31,7 +31,7 @@ main {
 .btn {
   /* ... existing button styles ... */
   align-items: center;
-  background-color: initial;
+  /* background-color: initial; */
   background-image: linear-gradient(#ff6699, #990033 50%);
   border-radius: 42px;
   border-width: 0;
@@ -82,4 +82,5 @@ main {
         font-size: 1.5em;
         padding: 10px;
     }
+
 }
